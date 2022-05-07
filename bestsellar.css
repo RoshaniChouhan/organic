@@ -1,0 +1,259 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,200;1,600&display=swap');
+
+:root{
+    --orange:#ff7800;
+    /* --black:#130f40; */
+    color: black;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black)
+
+}
+
+
+*{
+    font-family: "Poppins" , sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background: #eee;
+}
+.header{
+    position: fixed;
+    top:0; left:0;  right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+    /* color:var(--black) ; */
+}
+.header .logo  i{
+    color:black ;
+}
+.header .navbar  a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: black;
+}
+.header .navbar a:hover{
+    color: orange;
+}
+.header .icons div{
+    height:4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background:#eee ;
+    color: black;
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+ 
+
+}
+.header .icons div:hover{
+    background-color: #ff7800; 
+    color: #fff;
+ }
+ .header .search-form{
+    position: absolute;
+    top: 110%; right: -110%;
+   width: 50rem;
+   height: 5rem;
+   background: #fff;
+   border-radius: .5rem;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   box-shadow: var(--box-shadow);
+
+
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+
+
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+
+}
+.header .search-form label:hover{
+    color: var(--orange);
+}
+.header .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
+
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sort{
+padding: 10px 10px 10px 10px;
+
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #475d4b;
+}
+
+
+
+
+.bestsellar{
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 40px;
+    grid-template-columns: repeat(4,1fr);
+}
+.bestsellar>div{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+margin-bottom: 20px;
+}
+img+h2{
+    text-align: center;
+    font-size: 20px;
+   
+}
+h2+p{
+    text-align: center; 
+  color: gray
+  ;
+}
+p+h2{
+    text-align: center;  
+}
+img{
+    height: auto;
+     width: 100%; 
+}
+button{
+    padding: 10px 60px 10px 60px;
+ display: flex;
+ margin: auto;
+justify-content: center;
+color: white;
+/* margin-left: 50px;  */
+border-radius: 5px;
+background-color: #475d4b;
+}
+
+
+
+
+
+
+.footer{
+    /* background: #fff; */
+  background-color: #f1f7ec;
+}
+.footer .big-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.footer .big-container .big h3{
+    font: size 3.rem; 
+    margin-top: 20px;
+    /* color: var(--black); */
+    padding: 1rem 0;
+    color: black;
+}
+.footer .big-container .big h3 i{
+    /* color:orange ; */
+   color:  #475d4b;
+}
+.footer .big-container .big a{
+    display: block;
+    font-size: 2.5rem;
+    /* color: var(--light-color); */
+    color: black;
+    padding: 1rem 0;
+}
+.footer .big-container .big a i{
+    /* color: #ff7800 ; */
+    padding-right: .5rem;
+    color:  #475d4b;
+}
+.footer .big-container .big a:hover i{
+    padding-right:2rem ;
+}
+
+.big > input{
+    padding: 10px 20px 10px 20px;
+    background-color: 
+    #475d4b;
+    color: #d5e0ea;
+    border-radius: 3px;
+
+}
+.big > h3{
+    font-size: 20px;
+}
+p {
+    margin-bottom: 20px;
+ 
+}
